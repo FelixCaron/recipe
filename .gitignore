@@ -1,0 +1,9 @@
+
+*.pyc
+/Application/.vscode
+Application/manage.py
+Application/db.sqlite3
+/Application/models_recipe/migrations
+*.pyc
+/Django/recipeApp/recipe/__pycache__
+/Django/recipeApp/recipe/__pycache__

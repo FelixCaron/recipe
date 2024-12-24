@@ -37,9 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'recipe.apps.RecipeConfig',
     'django_extensions',
-]
+    'models_recipe.apps.RecipeConfig',]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,11 +77,11 @@ WSGI_APPLICATION = 'recipeApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'felixc',
+        'USER': 'postgres',
         'NAME': 'recipeapp',
-        'PASSWORD': 'Echiquier12',
+        'PASSWORD': '1000',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 

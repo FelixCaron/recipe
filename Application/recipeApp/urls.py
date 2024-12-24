@@ -20,7 +20,7 @@ from recipeApp import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("recipe/", include("recipe.urls")),
+    path("recipe/", include("models_recipe.urls")),
     path("admin/", admin.site.urls),
     
 ]

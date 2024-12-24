@@ -1,5 +1,7 @@
 from django.db import models
 
+
+
 class Recipe(models.Model):
     recipe_title = models.CharField(max_length=200)
     recipe_text = models.CharField(max_length=1000)

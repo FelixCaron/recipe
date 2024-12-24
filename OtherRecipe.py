@@ -1,6 +1,6 @@
 import scrape_schema_recipe
 
-class Recipe:
+class OtherRecipe:
 
     non_vegetarian_ingredients = ['Chicken','Beef','Pork','Fish','Lamb','Turkey','Duck','Goose','Crab','Shrimp','Lobster','Bacon','Sausage','Ham','Salmon','Tuna','Cod','Trout','Sardine','Mackerel','Anchovy','Herring','Mussel','Oyster','Clam','Octopus','Squid','Snail','Venison','Bison','Elk','Rabbit','Pheasant','Quail','Dove','Goat','Mutton','Horse','Kangaroo','Alligator','Frog','Turtle','Bear','Boar','Ostrich','Pigeon','Pheasant','Rattlesnake','Snail','Wild Boar','Wild Duck','Wild Turkey','Wild Goose','Wild Rabbit','Wild Pheasant','Wild Venison','Wild Elk','Wild Bison','Wild Boar','Wild Alligator','Wild Frog','Wild Turtle','Wild Bear','Wild Ostrich','Wild Pigeon','Wild Rattlesnake','Wild Snail','Wild Goose','Wild Rabbit','Wild Pheasant','Wild Venison','Wild Elk','Wild Bison','Wild Boar','Wild Alligator','Wild Frog','Wild Turtle','Wild Bear','Wild Ostrich','Wild Pigeon','Wild Rattlesnake','Wild Snail']
     def __init__(self, name, ingredients, instructions,image_link,cook_time,prep_time,difficulty):
@@ -35,8 +35,5 @@ class Recipe:
                 allergens.append(ingredient)
         return allergens
     
-    def get_recipe_from_url(url): #TODO: make better
-        recipe = scrape_schema_recipe.scrape_url(url, python_objects=True)[0]
-        parsed_recipe = Recipe(recipe['name'], recipe['recipeIngredient'], recipe['recipeInstructions'], recipe['image'],0,0,0)
-        return parsed_recipe
+
     
